@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>框架标签</title>
+	</head>
+	<body>
+		<!--
+			框架标签，实现页面模块化
+			border:边框 
+			iframe
+		-->
+		<table  width="100%" height="880"  cellspacing="0">
+			<tr height="80" bgcolor="aqua">
+				<td>
+					<label style="font-size: 40px;">千峰平台</label>
+				</td>
+				<td align="right" valign="top">
+					林峰欢迎你！
+					 <a href="">[退出]</a>
+				</td>
+			</tr>
+			<tr>
+				<td width="200" bgcolor="#999999" valign="top">
+					<ul>
+						<li><a href="http://www.hao123.com" target="mainFrame"><label style="font-family: '微软雅黑';">主页</label></a></li>
+						<li><a href="https://www.taobao.com" target="mainFrame"><label style="font-family: '微软雅黑';">淘宝</a></label></li>
+						<li><a href="http://www.qfedu.com" target="mainFrame"><label style="font-family: '微软雅黑';">千锋教育</a></label></li>
+					</ul>
+				</td>
+				<td>
+					<!--
+						在第二行第二个单元格展示，新邮件那些链接能在该单元打开
+						ifream标签 表示一个页面容器，通过name属性可以设置点击超链接以后，将页面在该容器展示
+						步骤1：给iframe标签设置name属性，给超链接a并且设置target等于ifream中name
+					-->
+					<iframe name="mainFrame" width="100%"></iframe>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

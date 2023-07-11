@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>超链接样式</title>
+		<style type="text/css">
+			/*未访问(初始状态)的超链接是蓝色的
+			     超链接点击下去是红色
+			     激活后的超链接是紫色*/
+			    
+			/*如何设置超链接下不同状态的样式---伪类*/
+			a{
+				/*设置下划线*/
+				text-decoration: none;
+				
+				/*设置超链接字体的颜色-颜色都不会变*/
+				/*color: gray;*/
+			}
+			
+			/*--------------伪类--------------*/
+			/*a:link 超链接初始状态(未激活)的颜色*/
+			
+			a:link{
+				color: darkcyan;
+			}
+			
+			/*a:hover 鼠标悬停时的颜色*/
+			
+			a:hover{
+				color: blue;
+			}
+			
+			/*a:active 设置超链接鼠标点下去的颜色*/
+			a:active{
+				color: orange;
+			}
+			
+			/*a:visited  鼠标点过之后的颜色*/
+			
+			a:visited{
+				color: green
+			}
+			
+			
+			.btnStyle{
+				border-color: #008000;
+				border-style: solid;
+				border-width: 1px;
+				border-radius: 5px;
+				
+				width: 180px;
+				height: 30px;
+				color: #008000;
+			}
+			
+			.btnStyle:hover{
+				background: #008000;
+				color: white;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<a href="http://www.baidu.com">百度</a>
+		
+		<button class="btnStyle">测试按钮</button>
+	</body>
+</html>

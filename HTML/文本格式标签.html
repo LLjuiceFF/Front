@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>设置文本的标签</title>
+	</head>
+	<body>
+		<!--粗体等-->
+		<b>这是粗体文本</b><br/>
+		<i>这是斜体文本</i><br/>
+		<del>这是删除文本</del><br />
+		<sub>这是下标字文本</sub><br />
+		<sup>这是上标字文本</sup><br />
+		
+		<!--字体颜色等设置-->
+		<font color="crimson" face="华文行楷" size="7">华为商城</font><br />
+		<font color="aqua" face="微软雅黑" size="7"></font>
+		
+		<!--在h5中会用label标签的style属性值设置出一样效果-->
+		<label style="color: green; font-size: 30px; font-family: '华文行楷' ;">京东商城</label>
+		<hr />
+		
+		<!--多行文本输入框textarea
+			rows 用于指定多行文本框显示的行数
+			cols 用于设置多行文本框每行显示的字符数(考虑浏览器兼容性可能大概不是决对)
+		-->
+		<textarea rows="5" cols="30"></textarea><br />
+		
+		<!--
+			表单输入框(包括文本输入框)是通过value输入框来写默认属性的，可以看表单标签文件的text
+			多行文本输入框是通过标签文本设置默认值的
+			
+		-->
+		<textarea rows="5" cols="30">请输入多行文本内容</textarea>
+		
+	</body>
+</html>

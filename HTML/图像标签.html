@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>图像标签</title>
+	</head>
+	<body bgcolor="azure">
+		<!--src用于显示图片的路径，可以是网络路径也可以是本地路径
+			本地图片：在项目中创建一个存放图片的文件，将图片放入这个文件夹
+			width和height设置图片宽度和高度，同时设置同时生效，只修改一个另一个会根据比例缩放
+			alt:用于图片无法加载时，体会图片的文本
+		-->
+		<img src="imgs/cxy.jpg" width="200"  />
+		<img src="imgs/cx.jpg" height="200" alt="程序员"/> <br />
+		
+		<!--audio调用音乐播放器
+			src指定音频路径
+			controls 显示播放框
+			autoplay 自动播放，但是会受不同浏览器限制
+		-->
+		<audio src="meida/99_ - Nevada.mp3" controls autoplay></audio><br />
+		
+		<!--video 调用视频播放器
+			src指定视频路径
+			controls 显示进度条
+			autoplay 自动播放
+		-->
+		<video src="meida/MV/小汪同志-盘点2022年最火古风歌曲排行榜前十名。(高清).mp4" 
+			controls autoplay width="400" height="400"></video>
+		
+	</body>
+</html>

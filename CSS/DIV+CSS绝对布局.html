@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			img{
+				/*height: 200px;*/
+				width: 200px;
+				margin: 0px;
+			}
+			/*div块级元素:高度默认和div内部内容一样高
+			 宽度默认和父容器一样宽*/
+			div{
+				border: 1px solid black;
+				width: 200px;
+				padding: 0px;
+			}
+			
+			/*div+css 绝对布局 控制div容器的位置*/
+			/*ID选择器*/
+			#div1{
+				position: absolute;  /*absolute绝对布局 飘起来*/
+				left: 300px;  /*div1中的图片左边距300px*/
+				top: 200px;
+			}
+			
+			#div2{
+				position: absolute;
+				left: 450px;
+				top: 400px;
+			}
+			
+			#div3{
+				position: absolute;
+				left: 275px;
+				top: 375px;
+				
+			}
+			
+			#container{
+				width: 1000px;
+				height: 800px;
+				background: yellow;
+				margin: 100px;
+				position: absolute;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!-- 使用absolute时
+			
+			1.如果div标签直接写在body中,设置position:absolute，div是参考浏览器边框
+			2.如果div标签写在父容器div中设置position:absolute，div还是参考浏览器
+			3.如果父容器div设置position=absolute/relative 父容器里面的div参考的是父容器边框
+			
+			  使用fixed时
+			4.无论什么情况，都参考浏览器边框
+		-->
+	<div id=container>
+			
+		<div id="div1">
+			<img src="../imgs/Kiss.jpg" />
+		</div>
+		<div id="div2">
+			<img src="../imgs/cry.jpg" />
+		</div>
+		<div id="div3">
+			<img src="../HTML/imgs/cxy.jpg"/>
+		</div>
+	</div>
+	</body>
+</html>

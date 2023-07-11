@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			img{
+				/*height: 200px;*/
+				width: 200px;
+				margin: 0px;
+			}
+			/*div块级元素:高度默认和div内部内容一样高
+			 宽度默认和父容器一样宽*/
+			div{
+				border: 1px solid black;
+				width: 200px;
+				padding: 0px;
+			}
+			
+			/*相对布局: div有默认位置，相对布局是参考默认位移
+			   relative*/
+			#div2{
+				position: relative;
+				left: 300px;
+				top: 200px;
+			}
+			
+			#div3{
+				position: relative;
+				left: 150px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			<img src="../imgs/Kiss.jpg" />
+		</div>
+		<div id="div2">
+			<img src="../imgs/cry.jpg" />
+		</div>
+		<div id="div3">
+			<img src="../HTML/imgs/cxy.jpg"/>
+		</div>
+	</body>
+</html>

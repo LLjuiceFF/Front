@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#container{
+				width: 1200px;
+				height: 800px;
+				border: 1px solid orange;
+				margin: 0px auto;
+			}
+				
+			/*CSS符合选择器:对id=container内部的div设置样式*/	
+		    /*#container div{
+		    	width: 200px;
+		    	height: 200px;
+		    }*/
+		    
+		    #div1{
+		    	
+		    	
+		    	background: red;
+		    	/*float样式属性:浮动
+		    	 container相当于湖面,里面的div相当于叶子
+		    	 设置float表示div开始浮动到湖面*/
+		    	float: left;
+		    	width: 1200px;
+		    	height: 100px;
+		    	
+		    }
+		    
+		    #div2{
+		    	
+		    	background: green;
+		    	float:left;
+		    	width: 200px;
+		    	height: 650px;
+		    }
+		    
+		    #div3{
+		    	
+		    	/*background: blue;*/
+		    	float: left;
+		    	width: 1000px;
+		    	height: 650px;
+		    }
+		    
+		    #div4{
+		    	
+		    	background: purple;
+		    	float: left;
+		    	width: 1200px;
+		    	height: 50px;
+		    }
+			
+			
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			
+			<div id="div1">div1</div>
+			<div id="div2">
+				<a href="http://www.taobao.com" target="mainFrame">淘宝</a>
+			</div>
+			<div id="div3">
+				<iframe name="mainFrame" width="1000" height="650"frameborder="0">
+					
+				</iframe>
+			</div>
+			<div id="div4">div4</div>
+			
+		</div>
+	</body>
+</html>

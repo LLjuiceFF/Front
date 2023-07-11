@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>form标签</title>
+	</head>
+	<body>
+		<!--form标签：向服务器提交数据
+			用户登录案例
+			form相当于运快递的箱子 url为地址
+			点击form标签中提交按钮时，可以将form标签中输入的数据提交到action属性指定的url(地址)中
+			1.提交form表单的按钮必须是提交按钮submit或者是图片image按钮  不能是button
+			
+			2.form表单中输入标签需要加name属性，否则标签中的值不会被提交
+			
+			3.form标签的method属性，指定提交数据的方式(get显示提交  post隐藏提交后面的后台提交)
+			
+			4.重置按钮必须在form标签中才能使用，使输入框回到默认状态，并不是情况，比如重置后回到请输入账号这几个字
+			
+			5.提交按钮也必须用在form表单中
+		-->
+		<form action="https://www.qfedu.com" method="post">
+		<input type ="text" placeholder="请输入账号" name="userName" /><br /><br />
+		<input type="password"placeholder="请输入密码" name="userPwd" /><br /><br />
+		<input type="submit" value="登录" />
+		<input type="reset" value="重置" />
+		</form>
+	</body>
+</html>

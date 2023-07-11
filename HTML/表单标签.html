@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单标签</title>
+	</head>
+	<body bgcolor="azure">
+		<!--input标签可以显示多种表单视图效果-->
+		文本输入框<input value="请输入关键字"/><br />
+		
+		密码输入框<input type="password" /><br />
+		
+		单选按钮<input type="radio" /><br />
+		
+		复选框<input type="checkbox" />
+		     <input type="checkbox" /><br />
+		文件选择框<input type="file" /><br />
+		     
+	        按钮
+	        
+	            普通按钮<input type="button" value="点我呀" /><br />
+	    
+	            重置按钮<input type="reset" /><br />
+	    
+	            提交按钮<input type="submit" /><br />
+	    <!--图片按钮从功能上和提交按钮一样，需要通过src指定按钮图片-->
+	        图片按钮<input type="image" src="" /><br />
+	    <!--数字输入框设置最大和最小值-->    
+	       数字输入框<input type="number" min="1" max="100" /><br />
+	       
+	       日期输入框<input type="date" /><br />
+	       
+	       颜色输入框<input type="color" /><br />
+	       
+	       邮箱输入框<input type="email" /><br />
+	       
+	       电话输入框<input type="tel" /><br />
+	       
+	       搜索输入框<input type="search" /><br />
+	       <!--hr 水平分界线-->
+	    <hr />
+	    
+	    <!--单选按钮使用注意事项
+	    	如果多个单选按钮是一个主题的选项，需要name属性，且属性必须相同
+	    -->
+	    
+	      单选按钮：<br />
+	      <!--
+	      	  name属性具有排他性
+	      	
+	                    单选按钮必须提供value属性值 value属性值会将当前按钮选中时提交到后端
+	                    
+	                    单选按钮设置check属性表示默认被选中
+
+	      -->
+	      <input type="radio" name="gender"  value="M"/ checked> 男 <br />
+	      <input type="radio" name="gender" value="W"/> 女<br />
+	      <input type="radio" name="gender" value="N"/> 不详<br />
+	      
+	      <hr />
+	      <!--复选框
+	      	不需要排他性 所以name属性一直没有关系
+	      	同样设置value值提交到后端
+	      	
+	      -->
+	      复选框按钮：<br />
+	      <input type="checkbox" name="hobby" value="BB" checked /> <label style="color: royalblue;
+	      	font-size: 20px; font-family: '微软雅黑';">篮球</label>
+	      <input type="checkbox" name="hobby" value="VL"/> 排球
+	      <input type="checkbox" name="hobby" value="FT"checked/> 足球
+	      <input type="checkbox" name="hobby" value="YY"/> 溜溜球
+	      
+	      <hr />
+	    下拉菜单（省市区的选择等）标签：select <br />
+	    <!--
+	    	select标签表示下拉菜单的容器
+	    	
+	    	
+	    	option子标签表示下拉菜单的选项,同理提供value属性，用于把选中选项内容传递给后端
+	    -->
+	    <select>
+	    	<option value="hefei">合肥</option>
+	    	<option value="beijing">北京</option>
+	    	<option value="nanjing">南京</option>
+	    	<option value="chengdu">成都</option>
+	    	<option value="xian">西安</option>
+	    </select>
+	    <br />
+	    <br />
+	        <!--
+	        	添加multiple属性，设置下拉菜单可以多选 ，需要按住ctrl
+	        	size 下拉列表一眼可见的属性数量
+	        -->
+	    <select multiple size="3">
+	    	<option value="hefei">合肥</option>
+	    	<option value="beijing">北京</option>
+	    	<option value="nanjing">南京</option>
+	    	<option value="chengdu">成都</option>
+	    	<option value="xian">西安</option>
+	    </select>
+	    <br />
+	    <br />
+	    <!--
+	    	所有表单属性都有共有标签例如id:不仅是表单标签共有属性，几乎所有HTML标签都共有的
+	    	它表示此标签在当前网页中的唯一表示，便于我定位标签进行操作；
+	    	在一个网页中标签的id的属性值保持唯一性
+	    	
+	    	name属性:用于将数据提交（同步提交）到后端时，在后端接收数据；
+	    	
+	    	required:表示文本框必须输入数据，否则不能提交
+	    	placeholder:设置输入框空值的提示信息，比value实用，并且点击可自动消失，vaule需要手动取消默认值
+	    	readonly:此输入框只显示数据，不能点击输入
+	    	disabled:输入框组件禁用(输入框不能输入，按钮不能点击，下拉菜单不能选择)
+	    	展示如下列代码
+	    	
+	    	
+	    -->
+	    <form>
+	    	<input type="text" required placeholder="请输入你的姓名"/>
+	    	<input type="submit" />
+	    </form>
+	    <br />
+	    <br />
+	    <form>
+	    	<input type="text" placeholder="这里你只能看不能改哦" readonly/>
+	    </form>
+	    <br />
+	    <br />
+	    
+	    <form>
+	    	<input type="button" value="click me"  disabled/>
+	    </form>
+	    	
+	    
+	
+
+	</body>
+</html>

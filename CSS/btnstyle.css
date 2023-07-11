@@ -1,0 +1,9 @@
+/*样式定义在CSS文件中，不需要style标签*/
+
+.btnstyle{
+				width: 200px;
+				height: 35px;
+				border: none;
+				background-color: peru;
+				border-radius: 100px;
+			}

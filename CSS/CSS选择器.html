@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS选择器</title>
+			<!--
+			CSS选择器:声明样式列表对网页中哪些HTML标签有效
+		-->
+		
+		<style type="text/css">
+			/*1.ID选择器(样式表对ID=img1的标签有效)*/
+			#img1{width:200px ; height: 200px;}
+			
+			/*2.标签选择器(对当前所有img标签都有效果)*/
+			/*img{border: 5px pink solid;}*/
+			
+			/*重点掌握一下：class选择器(对当前网页中class=borderstyle的标签有效)*/
+			.borderstyle{border: 5px pink solid;}
+			
+		</style>
+	</head>
+	<body>
+	
+		
+		<img id="img1" src="../imgs/cxy.jpg"/><br />
+		<img id="img2" src="../imgs/R-C.png"/>
+		
+		<div class="borderstyle">DIV Tag</div>
+		
+	</body>
+</html>

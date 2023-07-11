@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*大小样式*/
+			.sizeStyle{
+				width: 200px;
+				height: 200px;
+			}
+			
+			/*边框样式*/
+			.borderStyle{
+				/*边框颜色*/
+				/*border-color: blue;*/
+				/*边框样式-solid实线,dotted点状虚线,dashed段状虚线，double双实线至少为3px*/
+				border-style: solid;
+				/*边框宽度*/
+				border-width: 2px;
+				/*设置边框圆角*/
+				border-radius: 10px;
+				/*设置阴影 四个参数:阴影颜色,X轴偏移,Y轴偏移,渲染*/
+				/*box-shadow: red 3px 3px 4px;*/
+				
+			}
+			
+			/*背景样式*/
+			.backgroundStyle{
+				/*设置背景颜色*/
+				background-color: #CD853F;
+				/*设置背景图片*/
+				/*background-image: url(../imgs/cxy.jpg);*/
+				/*设置图片的偏移*/
+				/*同时设置水平和垂直方向的位移，负数表示向左和向上移动*/ 
+			    background-position: -50px;
+			    /*当背景图片比较小的时候设置平铺方式*/
+			   /*background-repeat: no-repeat; 不平铺*/
+			    /*repeat-x x轴方向平铺
+			      repeat-y y轴方向平铺
+			      repeat 双向平铺*/
+			}
+			
+			/*外边距样式:与父容器或同级标签(div上下都有图片,此时距离是与这两个图片之间的距离)边框之间的距离设置,主要包括上外边距  左外边距*/
+			.marginStyle{
+			  	margin-left: 100px;
+			  	margin-top: 100px;
+			  	/*margin-right: 100px;*/
+			  	/*margin-bottom: 100px;*/
+			  }
+			  
+			/*内边距样式:设置当前容器标签内的元素(文本/图片)距离当前容器边框的距离*/
+			.paddingStyle{
+				/*padding-left: 100px;*/
+				padding-top: 120px;
+			}
+			
+			/*字体样式*/
+			.fontStyle{
+				/*字体大小*/
+				font-size: 30px;
+				/*设置字体加粗*/
+				font-weight: bold;
+				/*设置字体颜色*/
+				color: #CD853F;
+				/*设置字体样式(宋体...)*/
+				font-family: 宋体;
+			}
+			
+			/*文本样式*/
+			.textStyle{
+				/*设置文本对齐方式*/
+				text-align: center;
+				/*文本装饰 underline:下划线  overline:上划线*/
+				text-decoration: none;
+				/*设置下划线样式(也可以设置上划线样式) 需要浏览器支撑*/
+				/*text-underline-color: aqua;*/
+				
+				/*设置阴影*/
+				/*text-shadow: bisque 2px 2px 10px;*/
+				
+			}
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		<!--<img class="sizeStyle" src="../imgs/cxy.jpg"/>-->
+		
+		<div class="borderStyle sizeStyle  marginStyle paddingStyle  fontStyle textStyle" >
+			<label style="font-size: large;">华为商城</label>
+			<br/>
+			<img  src="../imgs/huawei.png" width="100px"/>
+		</div>
+		
+		
+	</body>
+</html>
